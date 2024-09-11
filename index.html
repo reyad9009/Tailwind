@@ -18,6 +18,17 @@
       font-family: "Manrope", sans-serif;
     }
   </style>
+   <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                backgroundImage: {
+                    'bgImg': "url('assets/bg.jpg')",
+                },
+            }
+        }
+    }
+</script>
 </head>
 <body class="font-manrope bg-white">
  
@@ -163,7 +174,7 @@
       <h1 class="py-5 text-center font-extrabold text-2xl w-[80%]">Our Latest Portfolio</h1>
       <p class="text-center w-[90%] text-[0.92rem]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
       
-      <div class="grid lg:grid-cols-12 gap-3 mt-10 bg-transparent w-[90%]">
+      <div class="grid lg:grid-cols-12 gap-3 mt-10 bg-transparent w-[90%] pb-14">
         <div class=" border-2 border-[#e9e9e9] rounded-2xl col-span-12 lg:col-span-8">
           <div class="grid grid-cols-1 sm:grid-cols-3 p-4 px-6 gap-5">
             <div>
@@ -216,7 +227,33 @@
         </div>
       </div>
     </section>
-     <!--Section 4 Explore our Latest works end-->
+    <!--Section 4 Explore our Latest works end-->
+
+
+    <!--Section 5 Explore our Latest works end-->
+    <section class="bg-bgImg bg-no-repeat bg-cover">
+      <div class="flex flex-wrap flex-col justify-center items-center">
+        <div class="mt-16 bg-[#e5f3d6] rounded-full px-4 py-3">
+          <i class="fa-solid fa-arrow-right-long text-[1rem] text-black rounded-full "></i>
+          <a>Let's Connect</a>
+        </div>
+        <h1 class="py-5 text-center font-extrabold text-2xl w-[70%]">Let s Discuss Next Project</h1>
+        <p class="text-center w-[90%] text-[0.92rem]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        <div class="space-y-4 mt-6 md:mt-10 w-[90%]">
+          <div class="md:flex justify-center md:gap-4 space-y-4 md:space-y-0">
+            <input type="text" placeholder="First Name" class="input bg-[#FFFFFF] input-ghost w-full rounded-[60px]  md:pr-64 " />
+            <input type="text" placeholder="Last Name" class="input bg-[#FFFFFF] rounded-[60px] input-ghost w-full  md:pr-64 " />
+          </div>
+          <div class="md:flex justify-center md:gap-4 space-y-4 md:space-y-0">
+            <input type="text" placeholder="Phone Number" class="input bg-[#FFFFFF] input-ghost w-full rounded-[60px]  md:pr-64 " />
+            <input type="text" placeholder="Emain Address" class="input bg-[#FFFFFF] input-ghost w-full rounded-[60px]  md:pr-64 " />
+          </div>
+          <textarea placeholder="Write your message here" class="textarea textarea-bordered w-full rounded-3xl max-h-60 min-h-60 max-w-[950px]"></textarea>
+        </div>
+      </div>
+    </section>
+    <!--Section 5 Explore our Latest works end-->
+
 
   </main>
 
